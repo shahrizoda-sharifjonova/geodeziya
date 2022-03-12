@@ -13,6 +13,9 @@
 html,
 body{
     height: 100%;
+    width: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
 }
 .wrapper{
     min-height: 100%;
@@ -40,6 +43,10 @@ ul{
     font-size: 46px;
     line-height: 130%;
     color: #313330;
+    @include media(992){
+        font-size: 22px;
+        line-height: 130%;
+    }
     &-span{
         color: #6C9875;
     }
@@ -50,11 +57,22 @@ ul{
     line-height: 22px;
     color: #FFFFFF;
     background: linear-gradient(183.38deg, #BCDAC3 17.08%, #719B7A 96.95%);
-    box-shadow: 0px 4.24905px 0px #78957E, inset 0px 2.8327px 4.24905px rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 4px 0px #78957E, inset 0px 2.8327px 4px rgba(255, 255, 255, 0.25);
     border-radius: 10.5619px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    bottom: 0;
+    transition: 200ms ease;
+    &:active{
+        box-shadow: none;
+        bottom: -4px;
+    }
+    @include media(767){
+        font-size: 14px;
+        line-height: 19px;
+    }
 }
 .circle{
     background: #6C9875;
@@ -67,6 +85,8 @@ ul{
     justify-content: center;
     align-items: center;
     position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
     &::before{
         content: '';
         position: absolute;
@@ -74,7 +94,6 @@ ul{
         height: 209px;
         left: -10px;
         top: -10px;
-        z-index: -1;
         background: rgba(108, 152, 117, 0.21);
         border-radius: 50%;
     }
@@ -84,5 +103,36 @@ ul{
         line-height: 130%;
         text-align: center;
         color: #FFFFFF;
+    }
+}
+.swiper{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    &-wrapper{
+        display: flex;
+        width: max-content;
+    }
+    &-slide{
+        width: auto;
+    }
+    &-button{
+        &-next,
+        &-prev{
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            @include media(576){
+                width: 36px;
+                height: 36px;
+            }
+        }
+        &-prev{
+            background: url('../img/carousel-prev.svg') 100% 100% / cover no-repeat;
+        }
+        &-next{
+            background: url('../img/carousel-prev.svg') 100% 100% / cover no-repeat;
+            transform: rotate(180deg) scaleY(-1);
+        }
     }
 }

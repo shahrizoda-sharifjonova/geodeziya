@@ -2,6 +2,10 @@
     padding-top: 48px;
     padding-bottom: 48px;
     z-index: 50;
+    @include media(992){
+        padding-top: 27px;
+        padding-bottom: 39px;
+    }
     &__nav{
         display: flex;
         justify-content: space-between;
