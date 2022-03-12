@@ -1,4 +1,7 @@
 .header{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    z-index: 50;
     &__nav{
         display: flex;
         justify-content: space-between;

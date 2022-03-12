@@ -27,17 +27,62 @@ button{
     border: none;
     cursor: pointer;
 }
-.section{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    @include media(992){
-        padding-top: 35px;
-        padding-bottom: 35px;
-    }
-}
 a{
     text-decoration: none;
 }
 ul{
     list-style: none;
+}
+.title{
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    color: #313330;
+    &-span{
+        color: #6C9875;
+    }
+}
+.btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: linear-gradient(183.38deg, #BCDAC3 17.08%, #719B7A 96.95%);
+    box-shadow: 0px 4.24905px 0px #78957E, inset 0px 2.8327px 4.24905px rgba(255, 255, 255, 0.25);
+    border-radius: 10.5619px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    background: #6C9875;
+    max-width: 187px;
+    width: 100%;
+    height: 187px;
+    border-radius: 50%;
+    background: #6C9875;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 209px;
+        height: 209px;
+        left: -10px;
+        top: -10px;
+        z-index: -1;
+        background: rgba(108, 152, 117, 0.21);
+        border-radius: 50%;
+    }
+    &-p{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        text-align: center;
+        color: #FFFFFF;
+    }
 }

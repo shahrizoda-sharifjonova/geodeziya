@@ -1,0 +1,102 @@
+.intro{
+    margin-top: -178px;
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        background: linear-gradient(92.99deg, #FFFFFF 49.11%, rgba(255, 255, 255, 0) 82.57%), url(../img/intro-bg.png) center /  cover no-repeat;
+        padding-top: 223px;
+    }
+    &__title{
+        max-width: 617px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        margin-left: 22px;
+        row-gap: 15px;
+        margin-bottom: 50px;
+        max-width: 395px;
+        width: 100%;
+    }
+    &__li{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #141414;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: -22px;
+            height: 7px;
+            width: 7px;
+            background: linear-gradient(180deg, #BC6573 0%, #7D1B44 100%);
+            border: 2px solid rgba(238, 210, 220, 0.82);
+            box-shadow: 0px 1px 3px rgba(148, 117, 88, 0.2);
+            border-radius: 50%;
+        }
+        &-span{
+            font-weight: 700;
+        }
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__desc{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #313330;
+        max-width: 270px;
+        width: 100%;
+        margin-bottom: 30px;
+        &-span{
+            color: #6C9875;
+        }
+    }
+    &__btn{
+        max-width: 370px;
+        width: 100%;
+        height: 80px;
+        margin-bottom: 38px;
+        padding-left: 96px;
+        padding-right: 96px;
+        text-align: center;
+    }
+    &__info{
+        position: relative;
+        max-width: 395px;
+        width: 100%;
+    }
+    &__arrow{
+        position: absolute;
+        right: 0;
+        top: 60px;
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #313330;
+        max-width: 330px;
+        width: 100%;
+        &:nth-of-type(1){
+            margin-bottom: 15px;
+        }
+        &-span{
+            color: #B7517C;
+            font-weight: 700;
+        }
+    }
+    &__certificates{
+        display: flex;
+        column-gap: 20px;
+    }
+}
