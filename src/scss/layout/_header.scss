@@ -2,6 +2,7 @@
     padding-top: 48px;
     padding-bottom: 48px;
     z-index: 50;
+    background: linear-gradient(180deg, #FFFFFF 10%, rgba(255, 255, 255, 0) 100%);
     @include media(992){
         padding-top: 27px;
         padding-bottom: 39px;

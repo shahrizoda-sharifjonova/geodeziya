@@ -36,6 +36,14 @@ a{
 ul{
     list-style: none;
 }
+.section{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    @include media(992){
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+}
 .title{
     font-family: 'Play';
     font-style: normal;
@@ -96,6 +104,7 @@ ul{
         top: -10px;
         background: rgba(108, 152, 117, 0.21);
         border-radius: 50%;
+        z-index: 4;
     }
     &-p{
         font-weight: 700;
