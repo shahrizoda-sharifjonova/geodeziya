@@ -1,0 +1,16 @@
+mixin object()
+    .object.section 
+        .object__body.container 
+            h2.object__title.title Хотите рассказать про #[span.object__title-span.title-span ваш объект]?
+            p.object__desc Оставьте свои контакты, мы перезвоним в ближайшее время и уточним детали
+            .object__content 
+                form(action="#" method="POST").object__form
+                    input(type="text" placeholder="Введите свое имя" name="client" required)#objectName.object__input
+                    input(type="text" placeholder="Введите номер телефона" name="phone" required)#objectPhone.object__input
+                    p.object__error Заполните эти поля !
+                    button(type="submit" disabled).object__btn.btn Рассказать про объект
+                .object__buttons 
+                    input(type="checkbox" name="checkbox" id="object" checked required)
+                    label(for="object").object__p Я даю согласие на обработку своих персональных данных согласно #[span.object__p-span политике конфиденциальности]
+
+

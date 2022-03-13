@@ -145,3 +145,30 @@ ul{
         }
     }
 }
+input[type="checkbox"]{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #EBEAEA;
+    border-radius: 4px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        background: url(../img/check-arrow.svg) center / cover no-repeat;
+        width: 13px;
+        height: 7px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 200ms ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+    &:checked{
+        &::before{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

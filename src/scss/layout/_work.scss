@@ -90,10 +90,13 @@
                 font-size: 12px;
                 line-height: 150%;
                 padding: 18px 20px 14px 20px;
-                height: 89px;
+                height: 100px;
                 max-width: 100%;
                 width: 100%;
                 text-align: center;
+            }
+            @include media(576){
+                text-align: left;
             }
         }
     }

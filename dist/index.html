@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220313003525">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220313114923">
     <title>Document</title>
   </head>
   <body> 
@@ -86,9 +86,27 @@
                     </div>
                   </div>
                 </div>
+                <div class="object section"> 
+                  <div class="object__body container"> 
+                    <h2 class="object__title title">Хотите рассказать про <span class="object__title-span title-span">ваш объект</span>?</h2>
+                    <p class="object__desc">Оставьте свои контакты, мы перезвоним в ближайшее время и уточним детали</p>
+                    <div class="object__content"> 
+                      <form class="object__form" action="#" method="POST">
+                        <input class="object__input" type="text" placeholder="Введите свое имя" name="client" required id="objectName">
+                        <input class="object__input" type="text" placeholder="Введите номер телефона" name="phone" required id="objectPhone">
+                        <p class="object__error">Заполните эти поля !</p>
+                        <button class="object__btn btn" type="submit" disabled>Рассказать про объект</button>
+                      </form>
+                      <div class="object__buttons"> 
+                        <input type="checkbox" name="checkbox" id="object" checked required>
+                        <label class="object__p" for="object">Я даю согласие на обработку своих персональных данных согласно <span class="object__p-span">политике конфиденциальности</span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
       </div>
             <footer class="footer">  </footer>
     </div>
-    <script src="js/app.min.js?_v=20220313003525"> </script>
+    <script src="js/app.min.js?_v=20220313114923"> </script>
   </body>
 </html>

@@ -21,3 +21,21 @@ new Swiper(".intro__swiper", {
       },
     },
   });
+
+const objectInput = document.querySelectorAll('.object__input');
+const objectName = document.getElementById('objectName');
+const objectPhone = document.getElementById('objectPhone');
+const objectBtn = document.querySelector('.object__btn');
+const error = document.querySelector('.object__error');
+objectInput.forEach(el => {
+  el.addEventListener('input', (e)=>{
+    if(objectName.value.length != 0 && objectPhone.value.length != 0){
+      objectBtn.removeAttribute('disabled');
+      error.classList.remove('active')
+    }else{
+      objectBtn.setAttribute('disabled', '');
+      error.classList.add('active')
+    }
+  })
+});
+
