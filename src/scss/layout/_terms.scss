@@ -1,0 +1,101 @@
+.terms{
+    &__title{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 80px;
+        @include media(992){
+            margin-bottom: 40px;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 50px;
+        &:nth-of-type(2){
+            flex-direction: row-reverse;
+            @include media(992){
+                flex-direction: column;
+                row-gap: 20px;
+            }
+        }
+        &:nth-of-type(3){
+            justify-content: space-around;
+            margin-top: -50px;
+            @include media(992){
+                margin-top: 0;
+            }
+            .terms__img{
+                width: max-content;
+            }
+        }
+        @include media(992){
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+        }
+    }
+    &__texts{
+        padding-top: 80px;
+        @include media(992){
+            padding-top: 0;
+        }
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #313330;
+        margin-bottom: 10px;
+        @include media(992){
+            margin-bottom: 15px;
+        }
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #313330;
+        max-width: 470px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    &__li{
+        position: relative;
+        padding-left: 22px;
+        &::before{
+            content: '';
+            position: absolute;
+            background: linear-gradient(180deg, #BC6573 0%, #7D1B44 100%);
+            border: 2px solid rgba(238, 210, 220, 0.82);
+            box-shadow: 0px 1px 3px rgba(148, 117, 88, 0.2);
+            width: 7px;
+            height: 7px;
+            top: 5px;
+            left: 0;
+            border-radius: 50%;
+        }
+    }
+    &__img{
+        @include media(992){
+            max-width: 100%;
+            width: 100%;
+        }
+        img{
+            @include media(992){
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
