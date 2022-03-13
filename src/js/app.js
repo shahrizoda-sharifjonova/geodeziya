@@ -41,6 +41,23 @@ new Swiper(".intro__swiper", {
       }
     },
   });
+  new Swiper(".risk__swiper", {
+    modules: [Navigation],
+    slidesPerView: 1,
+    spaceBetween: 26,
+    navigation: {
+      nextEl: ".risk__button-next",
+      prevEl: ".risk__button-prev",
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 3,
+      },
+      767:{
+        slidesPerView: 2,
+      }
+    },
+  });
 
 const input = document.querySelectorAll('.input');
 const name = document.getElementById('name');

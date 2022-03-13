@@ -131,6 +131,7 @@ ul{
             width: 56px;
             height: 56px;
             border-radius: 50%;
+            pointer-events: all !important;
             @include media(576){
                 width: 36px;
                 height: 36px;
@@ -138,10 +139,18 @@ ul{
         }
         &-prev{
             background: url('../img/carousel-prev.svg') 100% 100% / cover no-repeat;
+            transition: 200ms ease;
+            &.swiper-button-disabled{
+                opacity: 0.5;
+            }
         }
         &-next{
             background: url('../img/carousel-prev.svg') 100% 100% / cover no-repeat;
             transform: rotate(180deg) scaleY(-1);
+            transition: 200ms ease;
+            &.swiper-button-disabled{
+                opacity: 0.5;
+            }
         }
     }
 }
