@@ -237,6 +237,7 @@
   max-width: 617px;
   width: 100%;
   margin-bottom: 30px;
+  color: #313330;
 }
 
 .intro__list {
@@ -434,6 +435,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
+  color: #313330;
 }
 
 .work__content {
@@ -740,7 +742,7 @@ ul {
   font-weight: 700;
   font-size: 46px;
   line-height: 130%;
-  color: #313330;
+  color: #414141;
 }
 
 .title-span {
@@ -1229,6 +1231,11 @@ input[type=checkbox]:checked::before {
 
   .work__circle {
     top: 46%;
+  }
+
+  .object__btn {
+    min-width: 100%;
+    width: 100%;
   }
 
   .btn {
