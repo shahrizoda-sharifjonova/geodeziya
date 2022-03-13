@@ -57,6 +57,7 @@
     }
     &__img{
         max-width: 571px;
+        line-height: 0;
         width: 100%;
         @include media(992){
             max-width: 100%;

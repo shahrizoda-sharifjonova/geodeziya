@@ -22,6 +22,26 @@ new Swiper(".intro__swiper", {
     },
   });
 
+  new Swiper(".members__swiper", {
+    modules: [Navigation],
+    slidesPerView: 1,
+    spaceBetween: 15,
+    navigation: {
+      nextEl: ".members__button-next",
+      prevEl: ".members__button-prev",
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 3,
+      },
+      576:{
+        slidesPerView: 2,
+        spaceBetween: 20,
+      }
+    },
+  });
+
 const input = document.querySelectorAll('.input');
 const name = document.getElementById('name');
 const phone = document.getElementById('phone');
