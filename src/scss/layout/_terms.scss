@@ -98,4 +98,39 @@
             }
         }
     }
+    &__info{
+        background: #6C9875;
+        border-radius: 5px;
+        margin-top: 32px;
+        width: 100%;
+        padding: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include media(992){
+            padding: 50px 20px;
+        }
+        @include media(576){
+            margin-left: -15px;
+            width: calc(100% + 30px);
+        }
+        &-p{
+            font-family: 'Play';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: #FFFFFF;
+            max-width: 815px;
+            width: 100%;
+            @include media(992){
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+        &-span{
+            font-weight: bold;
+        }
+    }
 }

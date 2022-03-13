@@ -22,18 +22,18 @@ new Swiper(".intro__swiper", {
     },
   });
 
-const objectInput = document.querySelectorAll('.object__input');
-const objectName = document.getElementById('objectName');
-const objectPhone = document.getElementById('objectPhone');
-const objectBtn = document.querySelector('.object__btn');
-const error = document.querySelector('.object__error');
-objectInput.forEach(el => {
+const input = document.querySelectorAll('.input');
+const name = document.getElementById('name');
+const phone = document.getElementById('phone');
+const btn = document.querySelector('.input__btn');
+const error = document.querySelector('.input__error');
+input.forEach(el => {
   el.addEventListener('input', (e)=>{
-    if(objectName.value.length != 0 && objectPhone.value.length != 0){
-      objectBtn.removeAttribute('disabled');
+    if(name.value.length != 0 && phone.value.length != 0){
+      btn.removeAttribute('disabled');
       error.classList.remove('active')
     }else{
-      objectBtn.setAttribute('disabled', '');
+      btn.setAttribute('disabled', '');
       error.classList.add('active')
     }
   })

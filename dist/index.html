@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220313134945">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220313172359">
     <title>Document</title>
   </head>
   <body> 
@@ -91,11 +91,11 @@
                     <h2 class="object__title title">Хотите рассказать про <span class="object__title-span title-span">ваш объект</span>?</h2>
                     <p class="object__desc">Оставьте свои контакты, мы перезвоним в ближайшее время и уточним детали</p>
                     <div class="object__content"> 
-                      <form class="object__form" action="#" method="POST">
-                        <input class="object__input" type="text" placeholder="Введите свое имя" name="client" required id="objectName">
-                        <input class="object__input" type="text" placeholder="Введите номер телефона" name="phone" required id="objectPhone">
-                        <p class="object__error">Заполните эти поля !</p>
-                        <button class="object__btn btn" type="submit" disabled>Рассказать про объект</button>
+                      <form class="form" action="#" method="POST">
+                        <input class="input" type="text" placeholder="Введите свое имя" name="client" required id="name">
+                        <input class="input" type="text" placeholder="Введите номер телефона" name="phone" required id="phone">
+                        <p class="input__error">Заполните эти поля !</p>
+                        <button class="input__btn object__btn btn" type="submit" disabled>Рассказать про объект</button>
                       </form>
                       <div class="object__buttons"> 
                         <input type="checkbox" name="checkbox" id="object" checked required>
@@ -170,9 +170,74 @@
                     </div>
                   </div>
                 </div>
+                <div class="terms section"> 
+                  <div class="terms__body container"> 
+                    <h2 class="terms__title title">Сроки работ прописываем в договоре и соблюдаем их за счет <span class="terms__title-span title-span"> четко отлаженной системы контроля</span></h2>
+                    <div class="terms__content"> 
+                      <div class="terms__item"> 
+                        <div class="terms__img"> <picture><source srcset="img/terms-img-1.webp" type="image/webp"><img src="img/terms-img-1.png" alt=""></picture></div>
+                        <div class="terms__texts">  
+                          <p class="terms__subtitle">Система управления проектами</p>
+                          <p class="terms__desc">По каждому проекту есть четкий план со сроками и точками контроля. Вы в любой момент можете узнать, на какой стадии работы по вашему объекту</p>
+                        </div>
+                      </div>
+                      <div class="terms__item"> 
+                        <div class="terms__img"> <picture><source srcset="img/terms-img-2.webp" type="image/webp"><img src="img/terms-img-2.png" alt=""></picture></div>
+                        <div class="terms__texts">  
+                          <p class="terms__subtitle">Предоставляем отчеты по требованию клиента</p>
+                          <ul class="terms__list"> 
+                            <li class="terms__li terms__desc">Фотоотчеты с места проведения полевых работ</li>
+                            <li class="terms__li terms__desc">Отчетные документы по проведению камеральных работ</li>
+                            <li class="terms__li terms__desc">Сырые файлы с приборов</li>
+                            <li class="terms__li terms__desc">Аэрофотосьемка с объекта</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="terms__item"> 
+                        <div class="terms__img"> <picture><source srcset="img/terms-img-3.webp" type="image/webp"><img src="img/terms-img-3.png" alt=""></picture></div>
+                        <div class="terms__texts">  
+                          <p class="terms__subtitle">Персональный менеджер</p>
+                          <ul class="terms__list"> 
+                            <li class="terms__li terms__desc">В курсе всех работ по вашему объекту</li>
+                            <li class="terms__li terms__desc">На связи 24/7</li>
+                            <li class="terms__li terms__desc">Любой удобный способ связи (мессенджеры, телефон, электронная почта)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="terms__info"> 
+                      <p class="terms__info-p">Наработанный опыт и связи помогают нам выполнять работы быстрее <span class="terms__info-span">даже в сложных, нестандратных случаях, не нарушая сроки </span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="offer section"> 
+                  <div class="offer__body container"> 
+                    <h2 class="offer__title title">Запишитесь на <span class="offer__title-span title-span">бесплатную</span> консультацию с нашим специалистом, чтобы расчитать стоимость и сроки работ для вашего объекта</h2>
+                    <div class="offer__content"> 
+                      <div class="offer__img"> <picture><source srcset="img/offer-img.webp" type="image/webp"><img src="img/offer-img.png" alt=""></picture></div>
+                      <div class="offer__right"> 
+                        <h3 class="offer__subtitle">На консультации мы:</h3>
+                        <ul class="offer__list"> 
+                          <li class="offer__li">Уточним все детали</li>
+                          <li class="offer__li">Назовем точную стоимость и сроки</li>
+                          <li class="offer__li">Подберем выгодные условия оплат</li>
+                        </ul>
+                        <form class="offer__form" action="#" method="POST">
+                          <input class="input" type="text" placeholder="Введите свое имя" name="client" required id="name">
+                          <input class="input" type="text" placeholder="Введите номер телефона" name="phone" required id="phone">
+                          <button class="input__btn object__btn btn" type="submit" disabled>Рассказать про объект</button>
+                        </form>
+                        <p class="offer__desc">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <span class="offer__span">Политикой конфиденциальности</span></p>
+                        <div class="offer__info"> <a class="offer__icon" href="https://whatsapp.com"><img src="img/whatsapp.svg" alt=""></a><a class="offer__icon" href="https://telegram.com"><img src="img/telegram.svg" alt=""></a>
+                          <p class="offer__info-p">Записаться на консультацию по WhatsApp</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
       </div>
             <footer class="footer">  </footer>
     </div>
-    <script src="js/app.min.js?_v=20220313134945"> </script>
+    <script src="js/app.min.js?_v=20220313172359"> </script>
   </body>
 </html>
