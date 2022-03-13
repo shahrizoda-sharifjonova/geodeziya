@@ -1,0 +1,97 @@
+.order{
+    background: url(../img/order-bg.png) center / cover no-repeat;
+    width: 100%;
+    &__title{
+        margin-bottom: 65px;
+        max-width: 985px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        @include media(992){
+            margin-bottom: 40px;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media(1200){
+            flex-direction: column;
+            row-gap: 40px;
+            align-items: stretch;
+        }
+    }
+    &__right{
+        @include media(1200){
+            width: 100%;
+        }
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        max-width: 605px;
+        width: 100%;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #313330;
+        margin-bottom: 5px;
+        @include media(992){
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #313330;
+        @include media(992){
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+    &__text{
+        background: #FFFFFF;
+        border: 2px solid #6C9875;
+        border-radius: 5px;
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 53px 23px;
+        @include media(1200){
+            max-width: 100%;
+        }
+        @include media(992){
+            padding: 35px 43px;
+        }
+    }
+    &__p{
+        max-width: 355px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        color: #414141;
+        @include media(992){
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    &__span{
+        color: #6C9875;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,27 @@
+mixin order()
+    .order.section 
+        .order__body.container 
+            h2.order__title.title Вы экономите #[span.order__title-span.title-span 25-30%,] заказывая геодезические работы у нас
+            .order__content 
+                .order__left 
+                    .order__item 
+                        .order__img 
+                            img(src="@img/order-img-1.svg", alt="")
+                        .order__texts 
+                            p.order__subtitle Собственное оборудование на все виды работы
+                            p.order__desc Не платим за его аренду, не увеличиваем за счет этого стоимость работ
+                    .order__item 
+                        .order__img 
+                            img(src="@img/order-img-2.svg", alt="")
+                        .order__texts 
+                            p.order__subtitle Не допускаем ошибок при измерениях
+                            p.order__desc Вы не платите за переделки и недоработки на этапе проектирования
+                    .order__item 
+                        .order__img 
+                            img(src="@img/order-img-3.svg", alt="")
+                        .order__texts 
+                            p.order__subtitle Выполняем одновременно работы для нескольких видов услуг (геодезия, экология, геология)
+                            p.order__desc Вы не платите за дополнительный выезды сотрудников в поле
+                .order__right 
+                    .order__text 
+                        .order__p #[b Итого] #[span.order__span от 100.000] #[b рублей экономии] в зависимости от площади и протяженности объекта
