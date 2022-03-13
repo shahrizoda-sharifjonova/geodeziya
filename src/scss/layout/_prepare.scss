@@ -1,0 +1,114 @@
+.prepare{
+    &__title{
+        margin-bottom: 65px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        @include media(992){
+            margin-bottom: 35px;
+        }
+    }
+    &__desc{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: #313330;
+        max-width: 424px;
+        width: 100%;
+        margin-bottom: 15px;
+        @include media(992){
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            margin-bottom: 9px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #313330;
+        margin-bottom: 65px;
+        max-width: 400px;
+        width: 100%;
+        @include media(992){
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            margin-bottom: 35px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        @include media(1200){
+            column-gap: 30px;
+        }
+        @include media(992){
+            flex-direction: column;
+            row-gap: 40px;
+            align-items: stretch;
+        }
+    }
+    &__img{
+        max-width: 571px;
+        width: 100%;
+        @include media(992){
+            max-width: 100%;
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__right{
+        border: 2px solid #6C9875;
+        border-radius: 5px;
+        max-width: 370px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 21px;
+        padding-left: 21px;
+        @include media(992){
+            padding-top: 35px;
+            padding-bottom: 45px;
+            max-width: 100%;
+        }
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        color: #313330;
+        margin-bottom: 20px;
+        @include media(992){
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &-span{
+            color: #6C9875;
+        }
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #313330;
+        max-width: 299px;
+        width: 100%;
+        @include media(992){
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+}
