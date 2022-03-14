@@ -6,7 +6,7 @@ mixin header()
                     img(src="@img/logo.svg", alt="") 
                 a(href="index.html").header__logos-p Инженерные изыскания #[br] с 2013 года
             .header__buttons 
-                a(href="#!").header__btn.disable-lg Пригласить нас на тендер
+                button(type="button" data-target="#tender").popup-open.header__btn.disable-lg Пригласить нас на тендер
                 .header__buttons-content 
                     a(href="tel::8(812)309-67-37").header__phone  8 (812) 309-67-37
-                    a(href="#!").header__button  Обратный звонок
+                    button(type="button" data-target="#asks").popup-open.header__button  Обратный звонок

@@ -21,6 +21,18 @@
             background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 52.07%, #FFFFFF 100%), url(../img/intro-bg.png) right /  cover no-repeat;
         }
     }
+    &.full{
+        min-height: 100vh;
+        height: 100vh;
+        .intro__body{
+            min-height: 100vh;
+            height: 100vh;
+            @include media(1400){
+                min-height: 100px;
+                height: 100%;
+            }
+        }
+    }
     &__body{
         display: flex;
         justify-content: space-between;
@@ -275,6 +287,59 @@
         justify-content: space-between;
         @include media(1400){
             display: flex;
+        }
+    }
+}
+.intro2{
+    &__title{
+        margin-bottom: 15px;
+        @include media(992){
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        color: #141414;
+        margin-bottom: 15px;
+        @include media(992){
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include media(767){
+            font-size: 16px;
+            line-height: 150%;
+        }
+        &:nth-of-type(1){
+            margin-bottom: 67px;
+            @include media(992){
+                margin-bottom: 40px;
+            }
+        }
+    }
+    &__tel{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 150%;
+        color: #313330;
+        margin-bottom: 50px;
+        @include media(992){
+            font-size: 24px;
+            line-height: 150%;
+            margin-bottom: 35px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    }
+    &__btn{
+        @include media(992){
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }

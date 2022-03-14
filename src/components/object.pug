@@ -5,10 +5,10 @@ mixin object()
             p.object__desc Оставьте свои контакты, мы перезвоним в ближайшее время и уточним детали
             .object__content 
                 form(action="#" method="POST").form
-                    input(type="text" placeholder="Введите свое имя" name="client" required)#name.input
-                    input(type="text" placeholder="Введите номер телефона" name="phone" required)#phone.input
+                    input(type="text" placeholder="Введите свое имя" name="client" required)#name6.input.input6
+                    input(type="text" placeholder="Введите номер телефона" name="phone" required)#phone6.input.input6
                     p.input__error Заполните эти поля !
-                    button(type="submit" disabled).input__btn.object__btn.btn Рассказать про объект
+                    button(type="submit" disabled).input__btn.input__btn6.object__btn.btn Рассказать про объект
                 .object__buttons 
                     input(type="checkbox" name="checkbox" id="object" checked required)
                     label(for="object").object__p Я даю согласие на обработку своих персональных данных согласно #[span.object__p-span политике конфиденциальности]

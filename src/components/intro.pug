@@ -9,7 +9,7 @@ mixin intro()
                     li.intro__li #[span.intro__li-span Гарантия ] на все работы закреплена в договоре
                 p.intro__desc Рассчитаем стоимость вашего объекта за #[span.intro__desc-span 15 минут]
                 .intro__info 
-                    a(href="#!").intro__btn.btn Рассчитать стоимость и получить подарки
+                    button(type="button" data-target="#presents").popup-open.intro__btn.btn Рассчитать стоимость и получить подарки
                     .intro__arrow 
                         img(src="@img/intro-arrow.png", alt="")  
                     p.intro__p #[span.intro__p-span Скидка 15% ] при заключении договора в течении 2-х дней с момента обращения
@@ -17,7 +17,7 @@ mixin intro()
             .intro__right 
                 .intro__circle.circle 
                     p.intro__circle-p.circle-p Выполнили более 2700 объектов
-                .intro__right-btn.enable-lg Пригласить нас на тендер
+                button(type="button" data-target="#tender").popup-open.intro__right-btn.enable-lg Пригласить нас на тендер
                 .intro__slider
                     .intro__swiper.swiper
                         .intro__swiper-wrapper.swiper-wrapper 
@@ -32,6 +32,16 @@ mixin intro()
                     .intro__buttons
                         .swiper-button-prev.intro__button-prev
                         .swiper-button-next.intro__button-next
+                        
+mixin intro2()
+    .intro.full
+        .intro__body.container 
+            .intro__content 
+                h1.intro__title.title.intro2__title #[span.intro__title-span.title-span Имя,]  спасибо за заявку!
+                p.intro2__p #[b Наш менеджер] свяжется с вами в ближайшее время
+                p.intro2__p Если #[b нет времени] ждать, то позвоните нам:
+                p.intro2__tel 8 (812) 309-67-37
+                a(href="index.html").popup-open.intro__btn.intro2__btn.btn Вернуться на сайт
                         
 
 

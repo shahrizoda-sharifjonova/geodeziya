@@ -1,0 +1,75 @@
+mixin popup()
+    .popup#tender 
+        .popup-close
+        .popup__body
+            button(type="button").close-icon.popup-close 
+                img(src="@img/close-icon.svg", alt="")
+            h2.popup__title.title Хотите пригласить нас на #[span.popup__title-span.title-span участие в тендере]?
+            p.popup__desc Оставьте заявку, после уточнения деталей подготовим и отправим персональное КП для вас
+            .popup__content 
+                .popup__left 
+                    form(action="thanks.html").form.popup__form
+                        input(type="text" placeholder="Введите свое имя" name="client" required)#name1.input.input1
+                        input(type="text" placeholder="Введите номер телефона" name="phone" required)#phone1.input.input1
+                        input(type="email" placeholder="Введите ваш e-mail" name="phone" required)#email1.input.input1
+                        textarea(name="" placeholder="Комментарии").textarea.textarea1
+                        button(type="submit" disabled).input__btn.input__btn1.object__btn.btn Оставить заявку
+                    .object__buttons 
+                        input(type="checkbox" name="checkBox" id="popup1" checked required)
+                        label(for="popup1").object__p Я даю согласие на обработку своих персональных данных согласно #[span.object__p-span политике конфиденциальности]
+                .popup__right 
+                    .popup__img 
+                        img(src="@img/popup_1-img.png", alt="")
+    .popup#service
+        .popup-close
+        .popup__body
+            button(type="button").close-icon.popup-close 
+                img(src="@img/close-icon.svg", alt="")
+            h2.popup__title.title.popup__title_2 Не нашли #[span.popup__title-span.title-span нужную услугу]? #[br] Перезвоним в течение 15 минут
+            .popup__content 
+                .popup__right 
+                    .popup__img 
+                        img(src="@img/popup-img_2.png", alt="")
+                .popup__left 
+                    form(action="thanks.html").form.popup__form
+                        input(type="text" placeholder="Введите свое имя" name="client" required)#name2.input.input2
+                        input(type="text" placeholder="Введите номер телефона" name="phone" required)#phone2.input.input2
+                        button(type="submit" disabled).input__btn.input__btn2.object__btn.btn Задать вопрос
+                    .object__buttons 
+                        p.object__p Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с #[span.object__p-span Политикой конфиденциальности]    
+    .popup#asks
+        .popup-close
+        .popup__body
+            button(type="button").close-icon.popup-close 
+                img(src="@img/close-icon.svg", alt="")
+            h2.popup__title.title.popup__title_2.popup__title_3 У вас #[span.popup__title-span.title-span есть вопросы? ]? #[br] Перезвоним в течение 15 минут и ответим
+            .popup__content 
+                .popup__right 
+                    .popup__img 
+                        img(src="@img/popup-img_3.png", alt="")
+                .popup__left 
+                    form(action="thanks.html").form.popup__form
+                        input(type="text" placeholder="Введите свое имя" name="client" required)#name3.input.input3
+                        input(type="text" placeholder="Введите номер телефона" name="phone" required)#phone3.input.input3
+                        button(type="submit" disabled).input__btn.input__btn3.object__btn.btn Задать вопрос
+                    .object__buttons 
+                        p.object__p Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с #[span.object__p-span Политикой конфиденциальности]
+    .popup#presents
+        .popup-close
+        .popup__body
+            button(type="button").close-icon.popup-close 
+                img(src="@img/close-icon.svg", alt="")
+            h2.popup__title.title.popup__title_2.popup__title_3 Рассчитайте стоимость и  #[span.popup__title-span.title-span  закрепите #[br] подарки ] за своим номером
+            .popup__content 
+                .popup__right 
+                    .popup__img 
+                        img(src="@img/popup-img_4.png", alt="")
+                .popup__left 
+                    form(action="thanks.html").form.popup__form
+                        input(type="text" placeholder="Введите свое имя" name="client" required)#name4.input.input4
+                        input(type="text" placeholder="Введите номер телефона" name="phone" required)#phone4.input.input4
+                        button(type="submit" disabled).input__btn.input__btn4.object__btn.btn Рассчитать стоимость
+                    .object__buttons 
+                        p.object__p Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с #[span.object__p-span Политикой конфиденциальности]
+
+                    
