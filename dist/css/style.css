@@ -1507,6 +1507,8 @@
   margin-right: auto;
   text-align: center;
   margin-bottom: 65px;
+  max-width: 984px;
+  width: 100%;
 }
 
 .stages__content {
