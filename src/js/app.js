@@ -58,6 +58,23 @@ new Swiper(".intro__swiper", {
       }
     },
   });
+  new Swiper(".clients__swiper", {
+    modules: [Navigation],
+    slidesPerView: 1,
+    spaceBetween: 26,
+    navigation: {
+      nextEl: ".clients__button-next",
+      prevEl: ".clients__button-prev",
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 3,
+      },
+      767:{
+        slidesPerView: 2,
+      }
+    },
+  });
 
 const input = document.querySelectorAll('.input');
 const name = document.getElementById('name');
