@@ -1377,6 +1377,72 @@
   line-height: 0;
 }
 
+.controls__title {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.controls__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+}
+
+.controls__img {
+  max-width: 670px;
+  width: 100%;
+}
+
+.controls__img img {
+  width: 100%;
+}
+
+.controls__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 15px;
+}
+
+.controls__li {
+  max-width: 345px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #313330;
+  padding-left: 22px;
+  position: relative;
+}
+
+.controls__li::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 0;
+  top: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC6573), to(#7D1B44));
+  background: -o-linear-gradient(top, #BC6573 0%, #7D1B44 100%);
+  background: linear-gradient(180deg, #BC6573 0%, #7D1B44 100%);
+  border: 2px solid rgba(238, 210, 220, 0.82);
+  -webkit-box-shadow: 0px 1px 3px rgba(148, 117, 88, 0.2);
+          box-shadow: 0px 1px 3px rgba(148, 117, 88, 0.2);
+  border-radius: 50%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2129,6 +2195,10 @@ input[type=checkbox]:checked::before {
     row-gap: 15px;
   }
 
+  .help__title {
+    margin-bottom: 35px;
+  }
+
   .help__row:nth-of-type(1) {
     margin-bottom: 0;
   }
@@ -2159,6 +2229,23 @@ input[type=checkbox]:checked::before {
   }
 
   .help__item-p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .controls__title {
+    margin-bottom: 30px;
+  }
+
+  .controls__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .controls__li {
     font-size: 14px;
     line-height: 19px;
   }
