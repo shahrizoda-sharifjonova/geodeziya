@@ -7,12 +7,15 @@ mixin footer()
                         img(src="@img/logo.svg", alt="")
                     p.footer__logos-p Инженерные изыскания с 2013 года 
                 p.footer__id ИНН 11111111 #[br] ОГРН 111111111111
+                p.footer__info.enable-lg Политика конфиденциальности
             .footer__right 
                 .footer__adress
                     a(href="tel::8(812)309-67-37").footer__phone  8 (812) 309-67-37
                     a(href="#!").footer__btn Обратный звонок
                 p.footer__mail info@mail.ru
-            .footer__item 
+                .footer__img.enable-lg    
+                    img(src="@img/instagram.svg", alt="")
+            .footer__item.disable-lg 
                 .footer__img    
                     img(src="@img/instagram.svg", alt="")
                 p.footer__info Политика конфиденциальности

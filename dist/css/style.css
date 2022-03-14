@@ -219,6 +219,10 @@
           align-items: center;
 }
 
+.footer {
+  background: rgba(108, 152, 117, 0.12);
+}
+
 .footer__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,6 +352,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer__info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #141414;
 }
 
 .intro {
@@ -2187,6 +2200,39 @@ input[type=checkbox]:checked::before {
     width: max-content;
   }
 
+  .footer__logos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .footer__id {
+    margin-bottom: 15px;
+  }
+
+  .footer__right {
+    row-gap: 0;
+  }
+
+  .footer__phone {
+    margin-bottom: 8px;
+  }
+
+  .footer__mail {
+    margin-top: 43px;
+    margin-bottom: 13px;
+  }
+
+  .footer__item {
+    bottom: 0;
+    right: 0;
+  }
+
   .intro {
     padding-top: 163px;
     margin-top: -178px;
@@ -2722,6 +2768,41 @@ input[type=checkbox]:checked::before {
     width: 100%;
   }
 
+  .footer__body {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+
+  .footer__logos-p {
+    font-size: 12px;
+    line-height: 150%;
+    max-width: 145px;
+    width: 100%;
+  }
+
+  .footer__id {
+    font-size: 12px;
+    line-height: 150%;
+  }
+
+  .footer__phone {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .footer__btn {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 145px;
+    width: 100%;
+  }
+
+  .footer__info {
+    font-size: 12px;
+    line-height: 150%;
+  }
+
   .intro__right-btn {
     margin-right: auto;
     margin-left: auto;
@@ -2858,6 +2939,10 @@ input[type=checkbox]:checked::before {
     margin-right: auto;
   }
 
+  .risk__buttons {
+    top: 130px;
+  }
+
   .swiper-button-next,
   .swiper-button-prev {
     width: 36px;
@@ -2875,6 +2960,12 @@ input[type=checkbox]:checked::before {
   .intro__list {
     max-width: 295px;
     width: 100%;
+  }
+}
+
+@media (max-width: 369px) {
+  .footer__phone {
+    font-size: 13px;
   }
 }
 
